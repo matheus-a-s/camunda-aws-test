@@ -1,0 +1,9 @@
+com/bpm/workflow/Application.class
+com/bpm/workflow/config/CORSFilterConfig.class
+com/bpm/workflow/dto/Order$OrderBuilder.class
+com/bpm/workflow/delegates/DispatcherDelegate.class
+com/bpm/workflow/config/CamundaSecurityFilter.class
+com/bpm/workflow/dto/DecisionTableEvaluation.class
+com/bpm/workflow/dto/Order.class
+com/bpm/workflow/delegates/ObjectSerializeDelegate.class
+com/bpm/workflow/delegates/ObjectDeserializeDelegate.class
