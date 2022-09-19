@@ -1,6 +1,3 @@
-# gt-tool-engine
-GT Tool Initial Backend Repository
-
 # Running with Docker
 ```
 docker build -t springio/camunda-aws-test .
