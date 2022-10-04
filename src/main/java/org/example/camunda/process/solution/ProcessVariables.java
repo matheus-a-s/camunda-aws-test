@@ -10,7 +10,10 @@ import org.apache.commons.lang3.builder.ToStringStyle;
 public class ProcessVariables {
 
   private String businessKey;
-  private Boolean result;
+  private String name;
+  private Integer hour;
+  private String timeOfDay;
+  private String result;
 
   public String getBusinessKey() {
     return businessKey;
@@ -21,11 +24,38 @@ public class ProcessVariables {
     return this;
   }
 
-  public Boolean getResult() {
+  public ProcessVariables setName(String name) {
+    this.name = name;
+    return this;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public ProcessVariables setHour(Integer hour) {
+    this.hour = hour;
+    return this;
+  }
+
+  public Integer getHour() {
+    return hour;
+  }
+
+  public ProcessVariables setTimeOfDay(String timeOfDay) {
+    this.timeOfDay = timeOfDay;
+    return this;
+  }
+
+  public String getTimeOfDay() {
+    return timeOfDay;
+  }
+
+  public String getResult() {
     return result;
   }
 
-  public ProcessVariables setResult(Boolean result) {
+  public ProcessVariables setResult(String result) {
     this.result = result;
     return this;
   }
