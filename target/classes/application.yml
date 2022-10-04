@@ -13,14 +13,14 @@ spring:
 
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:postgresql://database-1.csyo2v2nsfdb.us-east-1.rds.amazonaws.com:5432/gtt-postgres
-    username: gtt-postgres
-    password: 8emSrdgBGi4Ertu
+    url: jdbc:postgresql://database-1.csyo2v2nsfdb.us-east-1.rds.amazonaws.com:5432/camundadb
+    username: camundauser
+    password: engine@db
 
     hikari:
-      jdbc-url: jdbc:postgresql://database-1.csyo2v2nsfdb.us-east-1.rds.amazonaws.com:5432/gtt-postgres
-      username: gtt-postgres
-      password: 8emSrdgBGi4Ertu
+      jdbc-url: jdbc:postgresql://database-1.csyo2v2nsfdb.us-east-1.rds.amazonaws.com:5432/camundadb
+      username: camundauser
+      password: engine@db
       driver-class-name: org.postgresql.Driver
       pool-name: CAMUNDA-HIKARI-POOL
       idle-timeout: 3000

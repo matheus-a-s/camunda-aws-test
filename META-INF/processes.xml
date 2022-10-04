@@ -1,9 +1,9 @@
-<process-application
+<!-- <process-application
   xmlns="http://www.camunda.org/schema/1.0/ProcessApplication"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <process-archive>
-    <resource>process.bpmn</resource>
+    <resource>process2.bpmn</resource>
     <properties>
       <property name="isDeleteUponUndeploy">false</property>
       <property name="isScanForProcessDefinitions">true</property>
@@ -11,4 +11,4 @@
     </properties>
   </process-archive>
 
-</process-application>
+</process-application> -->
