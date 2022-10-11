@@ -1,0 +1,46 @@
+version: '3'
+
+services:
+  application:
+    container_name: camundapostgres
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # depends_on:
+    #   - db
+    image: camundapostgres:latest
+    ports:
+      - 8091:8091
+    # environment:
+    #   - SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:5432/postgres
+    #   - SPRING_DATASOURCE_USERNAME=postgres
+    #   - SPRING_DATASOURCE_PASSWORD=112505
+    #   - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+    # db:
+    #   image: 'postgres:13.1-alpine'
+    #   container_name: db
+    #   environment:
+    #     - POSTGRES_USER=postgres
+    #     - POSTGRES_PASSWORD=112505
+    # nginx:
+    #   image: nginx:1.17.6-alpine
+    #   container_name: nginx
+    #   ports:
+    #     - "8000:80"
+
+    # node1:
+    #   image: nginx:1.17.6-alpine
+    #   container_name: node1
+    #   ports:
+    #     - "80"
+
+    # node2:
+    #   image: nginx:1.17.6-alpine
+    #   container_name: node2
+    #   ports:
+    #     - "80"
+    # postgres:
+    #   image: postgres:9.6
+    #   environment:
+    #     - POSTGRES_USER=postgres
+    #     - POSTGRES_PASSWORD=112505

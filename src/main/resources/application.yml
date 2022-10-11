@@ -6,22 +6,51 @@ spring:
     name: camundapostgres
 
   profiles:
-    active: local  
+    active: local
+  
+  h2:
+    console:
+      enabled: true
+      path: /h2
+
+      settings:
+        web-allow-others: true
 
   jpa:
-    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    # database-platform: org.hibernate.dialect.PostgreSQLDialect
+    database-platform: org.hibernate.dialect.H2Dialect
+
+  # datasource:
+  #   type: com.zaxxer.hikari.HikariDataSource
+  #   url: jdbc:postgresql://localhost:5432/camunda7db
+  #   username: postgres
+  #   password: 112505
+
+  #   hikari:
+  #     jdbc-url: jdbc:postgresql://localhost:5432/camunda7db
+  #     username: postgres
+  #     password: 112505
+  #     driver-class-name: org.postgresql.Driver
+  #     pool-name: CAMUNDA-HIKARI-POOL
+  #     idle-timeout: 3000
+  #     minimum-idle: 30
+  #     maximum-pool-size: 10
+  #     connection-timeout: 2000
+  #     connection-test-query: select 1
+  #     transaction-isolation: TRANSACTION_READ_COMMITTED 
 
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:postgresql://database-1.csyo2v2nsfdb.us-east-1.rds.amazonaws.com:5432/camundadb
-    username: camundauser
-    password: engine@db
-
+    url: jdbc:h2:mem:gtt-develop
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+    
     hikari:
-      jdbc-url: jdbc:postgresql://database-1.csyo2v2nsfdb.us-east-1.rds.amazonaws.com:5432/camundadb
-      username: camundauser
-      password: engine@db
-      driver-class-name: org.postgresql.Driver
+      jdbc-url: jdbc:h2:mem:gtt-develop
+      username: sa
+      password: 
+      driver-class-name: org.h2.Driver
       pool-name: CAMUNDA-HIKARI-POOL
       idle-timeout: 3000
       minimum-idle: 30
